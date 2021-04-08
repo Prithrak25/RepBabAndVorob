@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<Head>
+<meta charset="UTF-8">
+<style>
+
+.red{
+width:150px;
+height:150px;
+background:red;
+position:relative;
+}
+
+
+</style>
+
+</Head>
+
+<body>
+<div class="red" ></div>
+<br>
+
+<button onclick='cr()' id="p1">Круг</button></br>
+<button onclick='pr()' id="p2">Прямоугольник</button></br>
+<button onclick='tr()' id="p3">Треугольник</button></br>
+<button onclick='ov()' id="p4">Овал</button></br>
+<button onclick='tra()' id="p5">Трапеция</button></br>
+<script type ="text/javascript"> 
+
+function cr(){
+document.querySelector('.red').style.width='100px';
+document.querySelector('.red').style.height='100px';
+document.querySelector('.red').style.borderRadius = '100px';
+}
+
+function pr(){
+document.querySelector('.red').style.width='500px';
+document.querySelector('.red').style.borderRadius = '0%';
+
+
+}
+
+function tr(){
+document.querySelector('.red').style.width='0px';
+document.querySelector('.red').style.height='0px';
+document.querySelector('.red').style.borderLeft='50px solid transparent';
+document.querySelector('.red').style.borderRight='50px solid transparent';
+document.querySelector('.red').style.borderBottom='100px solid #20a3bf';
+document.querySelector('.red').style.background='white';
+document.querySelector('.red').style.borderRadius='0%'
+}
+
+function ov(){
+document.querySelector('.red').style.width='200px';
+document.querySelector('.red').style.height='100px';
+document.querySelector('.red').style.borderRadius = '100px / 50px';
+
+
+}
+
+function tra(){
+document.querySelector('.red').style.width='120px';
+document.querySelector('.red').style.height='0px';
+document.querySelector('.red').style.borderLeft='60px solid transparent';
+document.querySelector('.red').style.borderRight='60px solid transparent';
+document.querySelector('.red').style.borderBottom='120px solid #ec3504';
+document.querySelector('.red').style.background='white';
+document.querySelector('.red').style.borderRadius='0%'
+}
+
+</script>
+
+</body>
+</html>
